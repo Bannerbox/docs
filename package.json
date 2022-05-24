@@ -2,6 +2,7 @@
   "name": "bannerbox-docs",
   "version": "0.1.0",
   "private": false,
+  "license": "Bannerbox Inc",
   "scripts": {
     "build": "next build && next export",
     "start": "next start",

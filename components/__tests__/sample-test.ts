@@ -1,5 +1,7 @@
 import { value } from '../fixtures/sample';
 
 describe('Sample', () => {
-  expect(value);
+  it('should pass', () => {
+    expect(value);
+  });
 });
