@@ -1,0 +1,29 @@
+{
+  "name": "bannerbox-docs",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "build": "next build && next export",
+    "start": "next start",
+    "ts-check": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "classnames": "^2.3.1",
+    "next": "^12.1.6",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.9.2",
+    "@types/classnames": "^2.3.1",
+    "@types/jest": "^27.5.1",
+    "@types/react": "^18.0.9",
+    "jest": "^28.1.0",
+    "ts-jest": "^28.0.3",
+    "ts-node": "^10.8.0",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.6.4"
+  }
+}
