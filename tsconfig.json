@@ -20,14 +20,15 @@
     "jsx": "preserve",
     "jsxImportSource": "@emotion/react",
     "baseUrl": ".",
+    "incremental": true
   },
   "typeRoots": [
-    "./node_modules/@types",
+    "./node_modules/@types"
   ],
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx", 
+    "**/*.tsx",
     "next.config.js"
   ],
   "exclude": [
@@ -36,7 +37,9 @@
   "ts-node": {
     "files": true,
     "compilerOptions": {
-      "typeRoots" : ["./node_modules/@types"]
+      "typeRoots": [
+        "./node_modules/@types"
+      ]
     }
   }
 }

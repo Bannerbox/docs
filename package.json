@@ -6,6 +6,7 @@
   "scripts": {
     "build": "next build && next export",
     "start": "next start",
+    "dev": "next dev -p 3100",
     "ts-check": "tsc",
     "test": "jest"
   },
