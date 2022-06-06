@@ -42,7 +42,8 @@ function collectHeadings(node: ExtendedNode, sections: Array<Record<string, any>
       }
     }
 
-    for (const child of node?.children) {
+    const children = node.children ?? [];
+    for (const child of children) {
       collectHeadings(child as ExtendedNode, sections);
     }
   }
