@@ -11,22 +11,26 @@
     "test": "jest"
   },
   "dependencies": {
-    "@emotion/react": "^11.9.0",
-    "classnames": "^2.3.1",
-    "next": "^12.1.6",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "@emotion/react": "latest",
+    "@markdoc/markdoc": "latest",
+    "@markdoc/next.js": "latest",
+    "classnames": "latest",
+    "next": "latest",
+    "prismjs": "^1.28.0",
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "@emotion/babel-plugin": "^11.9.2",
-    "@types/classnames": "^2.3.1",
-    "@types/jest": "^27.5.1",
-    "@types/react": "^18.0.9",
-    "jest": "^28.1.0",
-    "jest-environment-jsdom": "^28.1.0",
-    "ts-jest": "^28.0.3",
-    "ts-node": "^10.8.0",
-    "tsconfig-paths": "^4.0.0",
-    "typescript": "^4.6.4"
+    "@emotion/babel-plugin": "latest",
+    "@types/classnames": "latest",
+    "@types/jest": "latest",
+    "@types/prismjs": "^1.26.0",
+    "@types/react": "latest",
+    "jest": "latest",
+    "jest-environment-jsdom": "latest",
+    "ts-jest": "latest",
+    "ts-node": "latest",
+    "tsconfig-paths": "latest",
+    "typescript": "latest"
   }
 }
