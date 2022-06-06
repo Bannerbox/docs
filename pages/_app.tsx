@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { css } from '@emotion/react';
+import { css, Global } from '@emotion/react';
 
 import { Node } from '@markdoc/markdoc';
-import { SideNav, TableOfContents, TopNav } from '../components';
+import { SideNav, TableOfContents, TopNav } from 'components';
 
 import type { AppProps } from 'next/app';
 
@@ -13,6 +13,42 @@ const DESCRIPTION = 'Bannerbox documentation';
 type ExtendedNode = Node & {
   name: string;
 };
+
+const globalStyles = css`
+  :root {
+    --top-nav-height: 51px;
+    --border-color: #dce6e9;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+      Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    color: rgba(60, 66, 87, 1);
+    margin: 0;
+  }
+
+  p {
+    line-height: 1.5em;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    margin: 1.5em 0;
+  }
+
+  a {
+    color: rgba(75, 85, 99, 1);
+  }
+`;
 
 const styles = css`
   .page {
@@ -69,6 +105,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Global styles={globalStyles} />
       <Head>
         <title>{title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
