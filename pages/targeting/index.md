@@ -1,5 +1,5 @@
 ---
-title: Targetting 
+title: Targeting 
 ---
 
 ## {% $markdoc.frontmatter.title %}
