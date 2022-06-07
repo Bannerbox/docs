@@ -8,7 +8,7 @@
     "start": "next start",
     "dev": "next dev -p 3100",
     "ts-check": "tsc",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "dependencies": {
     "@emotion/react": "latest",
