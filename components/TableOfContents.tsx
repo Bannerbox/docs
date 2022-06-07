@@ -1,18 +1,19 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import Link from 'next/link';
+import { TOP_NAV_HEIGHT_PIXELS, BORDER_COLOR } from './utils/styles';
 
 const styles = css`
   nav {
     position: sticky;
 
-    top: calc(2.5rem + var(--top-nav-height));
-    max-height: calc(100vh - var(--top-nav-height));
+    top: calc(2.5rem + ${TOP_NAV_HEIGHT_PIXELS}px);
+    max-height: calc(100vh - ${TOP_NAV_HEIGHT_PIXELS}px);
     flex: 0 0 auto;
     align-self: flex-start;
     margin-bottom: 1rem;
     padding: 0.5rem 0 0;
-    border-left: 1px solid var(--border-color);
+    border-left: 1px solid ${BORDER_COLOR};
   }
   ul {
     margin: 0;

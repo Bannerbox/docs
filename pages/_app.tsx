@@ -4,6 +4,7 @@ import { css, Global } from '@emotion/react';
 
 import { Node } from '@markdoc/markdoc';
 import { SideNav, TableOfContents, TopNav } from 'components';
+import { TOP_NAV_HEIGHT_PIXELS } from 'components/utils/styles';
 
 import type { AppProps } from 'next/app';
 
@@ -15,11 +16,6 @@ type ExtendedNode = Node & {
 };
 
 const globalStyles = css`
-  :root {
-    --top-nav-height: 51px;
-    --border-color: #dce6e9;
-  }
-
   *,
   *::before,
   *::after {
@@ -53,14 +49,14 @@ const globalStyles = css`
 const styles = css`
   .page {
     position: fixed;
-    top: var(--top-nav-height);
+    top: ${TOP_NAV_HEIGHT_PIXELS}px;
     display: flex;
     width: 100vw;
     flex-grow: 1;
   }
   main {
     overflow: auto;
-    height: calc(100vh - var(--top-nav-height));
+    height: calc(100vh - ${TOP_NAV_HEIGHT_PIXELS}px);
     flex-grow: 1;
     font-size: 16px;
     padding: 0 2rem 2rem;
@@ -104,7 +100,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const toc = pageProps.markdoc?.content ? collectHeadings(pageProps.markdoc.content) : [];
 
   return (
-    <>
+    <div css={styles}>
       <Global styles={globalStyles} />
       <Head>
         <title>{title}</title>
@@ -125,6 +121,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         </main>
         <TableOfContents toc={toc} />
       </div>
-    </>
+    </div>
   );
 }

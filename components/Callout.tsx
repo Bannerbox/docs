@@ -19,7 +19,7 @@ type Props = {
 
 const Callout: React.FC<Props> = ({ title, children }) => {
   return (
-    <div css={styles} className="callout">
+    <div css={styles}>
       <strong>{title}</strong>
       <span>{children}</span>
     </div>

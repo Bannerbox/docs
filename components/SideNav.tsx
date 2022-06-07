@@ -1,16 +1,17 @@
 import { css } from '@emotion/react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { BORDER_COLOR, TOP_NAV_HEIGHT_PIXELS } from './utils/styles';
 
 const styles = css`
   nav {
     position: sticky;
-    top: var(--top-nav-height);
-    height: calc(100vh - var(--top-nav-height));
+    top: ${TOP_NAV_HEIGHT_PIXELS}px;
+    height: calc(100vh - ${TOP_NAV_HEIGHT_PIXELS}px);
     flex: 0 0 auto;
     overflow-y: auto;
     padding: 2.5rem 2rem 2rem;
-    border-right: 1px solid var(--border-color);
+    border-right: 1px solid ${BORDER_COLOR};
   }
   span {
     font-size: larger;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import Link from 'next/link';
+import { BORDER_COLOR } from './utils/styles';
 
 const styles = css`
   nav {
@@ -16,7 +17,7 @@ const styles = css`
     gap: 1rem;
     padding: 1rem 2rem;
     background: white;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid ${BORDER_COLOR};
   }
   nav :global(a) {
     text-decoration: none;

@@ -4,6 +4,11 @@ import Prism from 'prismjs';
 
 const styles = css`
   position: relative;
+
+  :global(pre[class*='language-']) {
+    text-shadow: none;
+    border-radius: 4px;
+  }
 `;
 
 type Props = {
