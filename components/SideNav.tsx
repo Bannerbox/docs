@@ -25,6 +25,7 @@ const styles = css`
   li {
     list-style: none;
     margin: 0;
+    margin-bottom: 12px;
   }
   li a {
     text-decoration: none;
@@ -38,7 +39,10 @@ const styles = css`
 const items = [
   {
     title: 'Setup',
-    links: [{ href: '/install', children: 'Install' }],
+    links: [
+      { href: '/install', children: 'Install' },
+      { href: 'targetting', children: 'Targetting' },
+    ],
   },
 ];
 
