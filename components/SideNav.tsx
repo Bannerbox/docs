@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 import { BORDER_COLOR, TOP_NAV_HEIGHT_PIXELS } from './shared/styles';
+import { INSTALL_LINK, TARGETING_LINK } from 'components/shared/links';
 
 const styles = css`
   nav {
@@ -40,8 +41,8 @@ const items = [
   {
     title: 'Setup',
     links: [
-      { href: '/install', children: 'Install' },
-      { href: 'targetting', children: 'Targetting' },
+      { href: INSTALL_LINK, children: 'Install' },
+      { href: TARGETING_LINK, children: 'Targeting' },
     ],
   },
 ];
