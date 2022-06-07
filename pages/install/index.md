@@ -2,4 +2,5 @@
 title: Install 
 ---
 
-# {% $markdoc.frontmatter.title %}
+## {% $markdoc.frontmatter.title %}
+

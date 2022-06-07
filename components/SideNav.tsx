@@ -37,7 +37,7 @@ const styles = css`
 
 const items = [
   {
-    title: 'Docs',
+    title: 'Setup',
     links: [{ href: '/install', children: 'Install' }],
   },
 ];

@@ -1,8 +1,8 @@
 import React from 'react';
 import { css } from '@emotion/react';
-import Link from 'next/link';
 
-import { BORDER_COLOR } from './shared/styles';
+import { BORDER_COLOR } from 'components/shared/styles';
+import Logo from './Logo';
 
 const styles = css`
   nav {
@@ -38,9 +38,7 @@ export const TopNav: React.FC<Props> = ({ children }) => {
   return (
     <div css={styles}>
       <nav>
-        <Link href="/" className="flex">
-          Home
-        </Link>
+        <Logo />
         {children && <section>{children}</section>}
       </nav>
     </div>
