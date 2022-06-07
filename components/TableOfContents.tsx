@@ -5,6 +5,7 @@ import Link from 'next/link';
 const styles = css`
   nav {
     position: sticky;
+
     top: calc(2.5rem + var(--top-nav-height));
     max-height: calc(100vh - var(--top-nav-height));
     flex: 0 0 auto;
@@ -45,25 +46,27 @@ export const TableOfContents: React.FC<Props> = ({ toc }) => {
   }
 
   return (
-    <nav css={styles} className="toc">
-      <ul className="flex column">
-        {items.map((item) => {
-          const href = `#${item.id}`;
-          const active = typeof window !== 'undefined' && window.location.hash === href;
-          return (
-            <li
-              key={item.title}
-              className={[active ? 'active' : undefined, item.level === 3 ? 'padded' : undefined]
-                .filter(Boolean)
-                .join(' ')}
-            >
-              <Link href={href} passHref>
-                <a>{item.title}</a>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    </nav>
+    <div css={styles}>
+      <nav className="toc">
+        <ul className="flex column">
+          {items.map((item) => {
+            const href = `#${item.id}`;
+            const active = typeof window !== 'undefined' && window.location.hash === href;
+            return (
+              <li
+                key={item.title}
+                className={[active ? 'active' : undefined, item.level === 3 ? 'padded' : undefined]
+                  .filter(Boolean)
+                  .join(' ')}
+              >
+                <Link href={href} passHref>
+                  <a>{item.title}</a>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    </div>
   );
 };
