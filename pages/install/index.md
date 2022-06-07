@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Install 
 ---
 
 # {% $markdoc.frontmatter.title %}

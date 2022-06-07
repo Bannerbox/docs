@@ -1,7 +1,8 @@
 import { css } from '@emotion/react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import { BORDER_COLOR, TOP_NAV_HEIGHT_PIXELS } from './utils/styles';
+
+import { BORDER_COLOR, TOP_NAV_HEIGHT_PIXELS } from './shared/styles';
 
 const styles = css`
   nav {
@@ -36,8 +37,8 @@ const styles = css`
 
 const items = [
   {
-    title: 'Get started',
-    links: [{ href: '/docs', children: 'Overview' }],
+    title: 'Docs',
+    links: [{ href: '/install', children: 'Install' }],
   },
 ];
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import Link from 'next/link';
-import { TOP_NAV_HEIGHT_PIXELS, BORDER_COLOR } from './utils/styles';
+import { TOP_NAV_HEIGHT_PIXELS, BORDER_COLOR } from './shared/styles';
 
 const styles = css`
   nav {

@@ -1,7 +1,8 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import Link from 'next/link';
-import { BORDER_COLOR } from './utils/styles';
+
+import { BORDER_COLOR } from './shared/styles';
 
 const styles = css`
   nav {
@@ -30,7 +31,7 @@ const styles = css`
 `;
 
 type Props = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 export const TopNav: React.FC<Props> = ({ children }) => {
@@ -40,7 +41,7 @@ export const TopNav: React.FC<Props> = ({ children }) => {
         <Link href="/" className="flex">
           Home
         </Link>
-        <section>{children}</section>
+        {children && <section>{children}</section>}
       </nav>
     </div>
   );

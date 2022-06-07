@@ -4,7 +4,7 @@ import { css, Global } from '@emotion/react';
 
 import { Node } from '@markdoc/markdoc';
 import { SideNav, TableOfContents, TopNav } from 'components';
-import { TOP_NAV_HEIGHT_PIXELS } from 'components/utils/styles';
+import { TOP_NAV_HEIGHT_PIXELS } from 'components/shared/styles';
 
 import type { AppProps } from 'next/app';
 
@@ -111,9 +111,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <TopNav>
-        <Link href="/docs">Docs</Link>
-      </TopNav>
+      <TopNav />
       <div className="page">
         <SideNav />
         <main className="flex column">
