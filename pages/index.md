@@ -5,4 +5,5 @@ description: How to get started with Bannerbox
 
 ## Documentation 
 
-Explore our guides and examples to integrate Bannerbox.
+Welcome to the Bannerbox documentation.
+
