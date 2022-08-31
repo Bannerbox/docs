@@ -263,9 +263,8 @@ If you are under 18 years of age, reside in California, and have a registered ac
 #### CCPA Privacy Notice
 
 The California Code of Regulations defines a "resident" as:
-
-(1) every individual who is in the State of California for other than a temporary or transitory purpose and
-(2) every individual who is domiciled in the State of California who is outside the State of California for a temporary or transitory purpose
+1. every individual who is in the State of California for other than a temporary or transitory purpose and
+2. every individual who is domiciled in the State of California who is outside the State of California for a temporary or transitory purpose
 
 All other individuals are defined as "non-residents."
 
@@ -335,7 +334,7 @@ We may also collect other personal information outside of these categories throu
 
 * Facilitation in the delivery of our Services and to respond to your inquiries.
 
-** How do we use and share your personal information?**
+**How do we use and share your personal information?**
 
 Bannerbox Inc. collects and shares your personal information through:
 
