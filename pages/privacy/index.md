@@ -194,7 +194,7 @@ The Services may link to third-party websites, online services, or mobile applic
 
 **In Short:** *We may use cookies and other tracking technologies to collect and store your information.*
 
-We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Notice.
+We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Please contact us for more information about how we use such technologies and how you can refuse certain cookies. 
 
 ### 7. HOW DO WE HANDLE YOUR SOCIAL LOGINS?
 
