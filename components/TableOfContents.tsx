@@ -61,7 +61,7 @@ export const TableOfContents: React.FC<Props> = ({ toc }) => {
                   .join(' ')}
               >
                 <Link href={href} passHref>
-                  <a>{item.title}</a>
+                  {item.title}
                 </Link>
               </li>
             );
