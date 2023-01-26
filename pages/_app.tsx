@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import { css, Global } from '@emotion/react';
 
 import { Node } from '@markdoc/markdoc';
